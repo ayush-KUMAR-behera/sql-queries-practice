@@ -1,0 +1,24 @@
+WAQTD names of the employees if they are working in dept 10
+SQL> SELECT DNAME
+  2  FROM DEPT
+  3  WHERE DEPTNO=10;
+
+WAQTD names of the employees earning more than 2500
+SQL> SELECT ENAME
+  2  FROM EMP
+  3  WHERE SAL>2500;
+
+WAQTD name and salary of the employees earning exactly 3000 rupees
+SQL> SELECT ENAME,SAL
+  2  FROM EMP
+  3  WHERE SAL=3000;
+
+WAQTD all the details of the employee who's name is 'SCOTT'
+SQL> SELECT EMP.*
+  2  FROM EMP
+  3  WHERE ENAME='SCOTT';
+
+ WAQTD all the details of the employee was hired on 10-MAR-1997
+SQL> SELECT EMP.*
+  2  FROM EMP
+  3  WHERE HIREDATE='10-MAR-1997';	//---- it madnotory to write date in '' -- '10-MAR-1997'
